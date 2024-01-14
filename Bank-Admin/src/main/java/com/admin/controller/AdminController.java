@@ -32,7 +32,7 @@ public class AdminController {
 		return new ResponseEntity<User>(AddedUser,HttpStatus.CREATED); 
 	}
 	
-	@GetMapping("/getUser/{Id}")
+	@GetMapping("/getUser/{Id1}")
 	public ResponseEntity<User>getUserById(@PathVariable int Id){
 		
 		User userById = adminService.getUserById(Id);
